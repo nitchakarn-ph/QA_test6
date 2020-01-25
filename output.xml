@@ -1,0 +1,1074 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.7.4 on win32)" generated="20190911 03:30:03.597" rpa="false">
+<suite id="s1" name="lab6Test" source="D:\qa\WebDemo-master\demoapp\html\lab6\lab6Test.robot">
+<test id="s1-t1" name="1.Customers&lt;1 ProYes memberNo">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${TRIANGLE URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190911 03:30:03.803" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:7272/lab6/RestaurantPromotion.html'.</msg>
+<status status="PASS" starttime="20190911 03:30:03.803" endtime="20190911 03:30:09.888"></status>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" starttime="20190911 03:30:09.889" endtime="20190911 03:30:09.889"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190911 03:30:10.402" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-108.png"&gt;&lt;img src="selenium-screenshot-108.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20190911 03:30:09.890" endtime="20190911 03:30:10.402"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>custNo</arg>
+<arg>-1</arg>
+</arguments>
+<msg timestamp="20190911 03:30:10.403" level="INFO">Typing text '-1' into text field 'custNo'.</msg>
+<status status="PASS" starttime="20190911 03:30:10.403" endtime="20190911 03:30:10.803"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>isPromotionDate</arg>
+<arg>Yes</arg>
+</arguments>
+<msg timestamp="20190911 03:30:10.803" level="INFO">Selecting 'Yes' from radio button 'isPromotionDate'.</msg>
+<status status="PASS" starttime="20190911 03:30:10.803" endtime="20190911 03:30:11.165"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>isMember</arg>
+<arg>Not a member</arg>
+</arguments>
+<msg timestamp="20190911 03:30:11.166" level="INFO">Selecting 'Not a member' from radio button 'isMember'.</msg>
+<status status="PASS" starttime="20190911 03:30:11.165" endtime="20190911 03:30:11.521"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Submit</arg>
+</arguments>
+<msg timestamp="20190911 03:30:11.523" level="INFO">Clicking button 'Submit'.</msg>
+<status status="PASS" starttime="20190911 03:30:11.523" endtime="20190911 03:30:11.888"></status>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Total Price</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190911 03:30:12.612" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-109.png"&gt;&lt;img src="selenium-screenshot-109.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20190911 03:30:12.206" endtime="20190911 03:30:12.612"></status>
+</kw>
+<msg timestamp="20190911 03:30:12.612" level="FAIL">Page should not have contained text 'Total Price'.</msg>
+<status status="FAIL" starttime="20190911 03:30:11.888" endtime="20190911 03:30:12.612"></status>
+</kw>
+<status status="FAIL" starttime="20190911 03:30:03.802" endtime="20190911 03:30:12.613" critical="yes">Page should not have contained text 'Total Price'.</status>
+</test>
+<test id="s1-t2" name="2.Customers&lt;1 ProYes memberSilver">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>custNo</arg>
+<arg>-1</arg>
+</arguments>
+<msg timestamp="20190911 03:30:12.616" level="INFO">Typing text '-1' into text field 'custNo'.</msg>
+<status status="PASS" starttime="20190911 03:30:12.616" endtime="20190911 03:30:12.958"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>isPromotionDate</arg>
+<arg>Yes</arg>
+</arguments>
+<msg timestamp="20190911 03:30:12.958" level="INFO">Selecting 'Yes' from radio button 'isPromotionDate'.</msg>
+<status status="PASS" starttime="20190911 03:30:12.958" endtime="20190911 03:30:13.171"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>isMember</arg>
+<arg>Silver</arg>
+</arguments>
+<msg timestamp="20190911 03:30:13.171" level="INFO">Selecting 'Silver' from radio button 'isMember'.</msg>
+<status status="PASS" starttime="20190911 03:30:13.171" endtime="20190911 03:30:13.524"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Submit</arg>
+</arguments>
+<msg timestamp="20190911 03:30:13.525" level="INFO">Clicking button 'Submit'.</msg>
+<status status="PASS" starttime="20190911 03:30:13.524" endtime="20190911 03:30:13.862"></status>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Total Price</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190911 03:30:14.551" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-110.png"&gt;&lt;img src="selenium-screenshot-110.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20190911 03:30:14.178" endtime="20190911 03:30:14.551"></status>
+</kw>
+<msg timestamp="20190911 03:30:14.551" level="FAIL">Page should not have contained text 'Total Price'.</msg>
+<status status="FAIL" starttime="20190911 03:30:13.862" endtime="20190911 03:30:14.551"></status>
+</kw>
+<status status="FAIL" starttime="20190911 03:30:12.615" endtime="20190911 03:30:14.551" critical="yes">Page should not have contained text 'Total Price'.</status>
+</test>
+<test id="s1-t3" name="3.Customers&lt;1 ProYes memberGoal">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>custNo</arg>
+<arg>-1</arg>
+</arguments>
+<msg timestamp="20190911 03:30:14.553" level="INFO">Typing text '-1' into text field 'custNo'.</msg>
+<status status="PASS" starttime="20190911 03:30:14.553" endtime="20190911 03:30:14.892"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>isPromotionDate</arg>
+<arg>Yes</arg>
+</arguments>
+<msg timestamp="20190911 03:30:14.893" level="INFO">Selecting 'Yes' from radio button 'isPromotionDate'.</msg>
+<status status="PASS" starttime="20190911 03:30:14.893" endtime="20190911 03:30:15.106"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>isMember</arg>
+<arg>Gold</arg>
+</arguments>
+<msg timestamp="20190911 03:30:15.106" level="INFO">Selecting 'Gold' from radio button 'isMember'.</msg>
+<status status="PASS" starttime="20190911 03:30:15.106" endtime="20190911 03:30:15.471"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Submit</arg>
+</arguments>
+<msg timestamp="20190911 03:30:15.472" level="INFO">Clicking button 'Submit'.</msg>
+<status status="PASS" starttime="20190911 03:30:15.471" endtime="20190911 03:30:15.807"></status>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Total Price</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190911 03:30:16.502" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-111.png"&gt;&lt;img src="selenium-screenshot-111.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20190911 03:30:16.124" endtime="20190911 03:30:16.502"></status>
+</kw>
+<msg timestamp="20190911 03:30:16.502" level="FAIL">Page should not have contained text 'Total Price'.</msg>
+<status status="FAIL" starttime="20190911 03:30:15.807" endtime="20190911 03:30:16.502"></status>
+</kw>
+<status status="FAIL" starttime="20190911 03:30:14.553" endtime="20190911 03:30:16.503" critical="yes">Page should not have contained text 'Total Price'.</status>
+</test>
+<test id="s1-t4" name="4.Customers&lt;1 ProNo memberNo">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>custNo</arg>
+<arg>-1</arg>
+</arguments>
+<msg timestamp="20190911 03:30:16.505" level="INFO">Typing text '-1' into text field 'custNo'.</msg>
+<status status="PASS" starttime="20190911 03:30:16.505" endtime="20190911 03:30:16.844"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>isPromotionDate</arg>
+<arg>No</arg>
+</arguments>
+<msg timestamp="20190911 03:30:16.845" level="INFO">Selecting 'No' from radio button 'isPromotionDate'.</msg>
+<status status="PASS" starttime="20190911 03:30:16.844" endtime="20190911 03:30:17.193"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>isMember</arg>
+<arg>Not a member</arg>
+</arguments>
+<msg timestamp="20190911 03:30:17.193" level="INFO">Selecting 'Not a member' from radio button 'isMember'.</msg>
+<status status="PASS" starttime="20190911 03:30:17.193" endtime="20190911 03:30:17.528"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Submit</arg>
+</arguments>
+<msg timestamp="20190911 03:30:17.528" level="INFO">Clicking button 'Submit'.</msg>
+<status status="PASS" starttime="20190911 03:30:17.528" endtime="20190911 03:30:17.860"></status>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Total Price</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190911 03:30:18.551" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-112.png"&gt;&lt;img src="selenium-screenshot-112.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20190911 03:30:18.175" endtime="20190911 03:30:18.551"></status>
+</kw>
+<msg timestamp="20190911 03:30:18.552" level="FAIL">Page should not have contained text 'Total Price'.</msg>
+<status status="FAIL" starttime="20190911 03:30:17.860" endtime="20190911 03:30:18.552"></status>
+</kw>
+<status status="FAIL" starttime="20190911 03:30:16.505" endtime="20190911 03:30:18.552" critical="yes">Page should not have contained text 'Total Price'.</status>
+</test>
+<test id="s1-t5" name="5.Customers&lt;1 ProNo memberSilver">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>custNo</arg>
+<arg>-1</arg>
+</arguments>
+<msg timestamp="20190911 03:30:18.555" level="INFO">Typing text '-1' into text field 'custNo'.</msg>
+<status status="PASS" starttime="20190911 03:30:18.555" endtime="20190911 03:30:18.894"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>isPromotionDate</arg>
+<arg>No</arg>
+</arguments>
+<msg timestamp="20190911 03:30:18.894" level="INFO">Selecting 'No' from radio button 'isPromotionDate'.</msg>
+<status status="PASS" starttime="20190911 03:30:18.894" endtime="20190911 03:30:19.107"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>isMember</arg>
+<arg>Silver</arg>
+</arguments>
+<msg timestamp="20190911 03:30:19.108" level="INFO">Selecting 'Silver' from radio button 'isMember'.</msg>
+<status status="PASS" starttime="20190911 03:30:19.108" endtime="20190911 03:30:19.446"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Submit</arg>
+</arguments>
+<msg timestamp="20190911 03:30:19.446" level="INFO">Clicking button 'Submit'.</msg>
+<status status="PASS" starttime="20190911 03:30:19.446" endtime="20190911 03:30:19.781"></status>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Total Price</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190911 03:30:20.489" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-113.png"&gt;&lt;img src="selenium-screenshot-113.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20190911 03:30:20.095" endtime="20190911 03:30:20.489"></status>
+</kw>
+<msg timestamp="20190911 03:30:20.490" level="FAIL">Page should not have contained text 'Total Price'.</msg>
+<status status="FAIL" starttime="20190911 03:30:19.781" endtime="20190911 03:30:20.490"></status>
+</kw>
+<status status="FAIL" starttime="20190911 03:30:18.554" endtime="20190911 03:30:20.490" critical="yes">Page should not have contained text 'Total Price'.</status>
+</test>
+<test id="s1-t6" name="6.Customers&lt;1 ProNo memberGoal">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>custNo</arg>
+<arg>-1</arg>
+</arguments>
+<msg timestamp="20190911 03:30:20.493" level="INFO">Typing text '-1' into text field 'custNo'.</msg>
+<status status="PASS" starttime="20190911 03:30:20.493" endtime="20190911 03:30:20.832"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>isPromotionDate</arg>
+<arg>No</arg>
+</arguments>
+<msg timestamp="20190911 03:30:20.834" level="INFO">Selecting 'No' from radio button 'isPromotionDate'.</msg>
+<status status="PASS" starttime="20190911 03:30:20.832" endtime="20190911 03:30:21.046"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>isMember</arg>
+<arg>Gold</arg>
+</arguments>
+<msg timestamp="20190911 03:30:21.046" level="INFO">Selecting 'Gold' from radio button 'isMember'.</msg>
+<status status="PASS" starttime="20190911 03:30:21.046" endtime="20190911 03:30:21.382"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Submit</arg>
+</arguments>
+<msg timestamp="20190911 03:30:21.382" level="INFO">Clicking button 'Submit'.</msg>
+<status status="PASS" starttime="20190911 03:30:21.382" endtime="20190911 03:30:21.714"></status>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Total Price</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190911 03:30:22.400" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-114.png"&gt;&lt;img src="selenium-screenshot-114.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20190911 03:30:22.031" endtime="20190911 03:30:22.400"></status>
+</kw>
+<msg timestamp="20190911 03:30:22.400" level="FAIL">Page should not have contained text 'Total Price'.</msg>
+<status status="FAIL" starttime="20190911 03:30:21.714" endtime="20190911 03:30:22.400"></status>
+</kw>
+<status status="FAIL" starttime="20190911 03:30:20.492" endtime="20190911 03:30:22.401" critical="yes">Page should not have contained text 'Total Price'.</status>
+</test>
+<test id="s1-t7" name="7.Customers&gt;1 ProYes memberNo">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>custNo</arg>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20190911 03:30:22.403" level="INFO">Typing text '4' into text field 'custNo'.</msg>
+<status status="PASS" starttime="20190911 03:30:22.403" endtime="20190911 03:30:22.741"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>isPromotionDate</arg>
+<arg>Yes</arg>
+</arguments>
+<msg timestamp="20190911 03:30:22.741" level="INFO">Selecting 'Yes' from radio button 'isPromotionDate'.</msg>
+<status status="PASS" starttime="20190911 03:30:22.741" endtime="20190911 03:30:23.076"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>isMember</arg>
+<arg>Not a member</arg>
+</arguments>
+<msg timestamp="20190911 03:30:23.077" level="INFO">Selecting 'Not a member' from radio button 'isMember'.</msg>
+<status status="PASS" starttime="20190911 03:30:23.077" endtime="20190911 03:30:23.421"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Submit</arg>
+</arguments>
+<msg timestamp="20190911 03:30:23.421" level="INFO">Clicking button 'Submit'.</msg>
+<status status="PASS" starttime="20190911 03:30:23.421" endtime="20190911 03:30:23.767"></status>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Total Price = 558.8800000000001 baht</arg>
+</arguments>
+<msg timestamp="20190911 03:30:24.091" level="INFO">Current page does not contain text 'Total Price = 558.8800000000001 baht'.</msg>
+<status status="PASS" starttime="20190911 03:30:23.767" endtime="20190911 03:30:24.091"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Promotion: One lucky draw, Offer a membership</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190911 03:30:24.897" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-115.png"&gt;&lt;img src="selenium-screenshot-115.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20190911 03:30:24.519" endtime="20190911 03:30:24.897"></status>
+</kw>
+<msg timestamp="20190911 03:30:24.897" level="FAIL">Page should have contained text 'Promotion: One lucky draw, Offer a membership' but did not.</msg>
+<status status="FAIL" starttime="20190911 03:30:24.092" endtime="20190911 03:30:24.897"></status>
+</kw>
+<status status="FAIL" starttime="20190911 03:30:22.403" endtime="20190911 03:30:24.898" critical="yes">Page should have contained text 'Promotion: One lucky draw, Offer a membership' but did not.</status>
+</test>
+<test id="s1-t8" name="8.Customers&gt;1 ProYes memberSilver">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>custNo</arg>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20190911 03:30:24.900" level="INFO">Typing text '4' into text field 'custNo'.</msg>
+<status status="PASS" starttime="20190911 03:30:24.900" endtime="20190911 03:30:25.237"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>isPromotionDate</arg>
+<arg>Yes</arg>
+</arguments>
+<msg timestamp="20190911 03:30:25.237" level="INFO">Selecting 'Yes' from radio button 'isPromotionDate'.</msg>
+<status status="PASS" starttime="20190911 03:30:25.237" endtime="20190911 03:30:25.452"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>isMember</arg>
+<arg>Silver</arg>
+</arguments>
+<msg timestamp="20190911 03:30:25.453" level="INFO">Selecting 'Silver' from radio button 'isMember'.</msg>
+<status status="PASS" starttime="20190911 03:30:25.453" endtime="20190911 03:30:25.801"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Submit</arg>
+</arguments>
+<msg timestamp="20190911 03:30:25.802" level="INFO">Clicking button 'Submit'.</msg>
+<status status="PASS" starttime="20190911 03:30:25.801" endtime="20190911 03:30:26.138"></status>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Total Price = 558.8800000000001 baht</arg>
+</arguments>
+<msg timestamp="20190911 03:30:26.457" level="INFO">Current page does not contain text 'Total Price = 558.8800000000001 baht'.</msg>
+<status status="PASS" starttime="20190911 03:30:26.138" endtime="20190911 03:30:26.457"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Promotion: One lucky draw, Free 1 Sundae</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190911 03:30:27.280" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-116.png"&gt;&lt;img src="selenium-screenshot-116.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20190911 03:30:26.883" endtime="20190911 03:30:27.280"></status>
+</kw>
+<msg timestamp="20190911 03:30:27.281" level="FAIL">Page should have contained text 'Promotion: One lucky draw, Free 1 Sundae' but did not.</msg>
+<status status="FAIL" starttime="20190911 03:30:26.458" endtime="20190911 03:30:27.281"></status>
+</kw>
+<status status="FAIL" starttime="20190911 03:30:24.900" endtime="20190911 03:30:27.281" critical="yes">Page should have contained text 'Promotion: One lucky draw, Free 1 Sundae' but did not.</status>
+</test>
+<test id="s1-t9" name="9.Customers&gt;1 ProYes memberGoal">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>custNo</arg>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20190911 03:30:27.285" level="INFO">Typing text '4' into text field 'custNo'.</msg>
+<status status="PASS" starttime="20190911 03:30:27.285" endtime="20190911 03:30:27.623"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>isPromotionDate</arg>
+<arg>Yes</arg>
+</arguments>
+<msg timestamp="20190911 03:30:27.623" level="INFO">Selecting 'Yes' from radio button 'isPromotionDate'.</msg>
+<status status="PASS" starttime="20190911 03:30:27.623" endtime="20190911 03:30:27.838"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>isMember</arg>
+<arg>Gold</arg>
+</arguments>
+<msg timestamp="20190911 03:30:27.838" level="INFO">Selecting 'Gold' from radio button 'isMember'.</msg>
+<status status="PASS" starttime="20190911 03:30:27.838" endtime="20190911 03:30:28.187"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Submit</arg>
+</arguments>
+<msg timestamp="20190911 03:30:28.188" level="INFO">Clicking button 'Submit'.</msg>
+<status status="PASS" starttime="20190911 03:30:28.188" endtime="20190911 03:30:28.523"></status>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Total Price = 558.8800000000001 baht</arg>
+</arguments>
+<msg timestamp="20190911 03:30:28.841" level="INFO">Current page does not contain text 'Total Price = 558.8800000000001 baht'.</msg>
+<status status="PASS" starttime="20190911 03:30:28.523" endtime="20190911 03:30:28.841"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Promotion: One lucky draw, Free 1 Sundae</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190911 03:30:29.674" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-117.png"&gt;&lt;img src="selenium-screenshot-117.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20190911 03:30:29.263" endtime="20190911 03:30:29.674"></status>
+</kw>
+<msg timestamp="20190911 03:30:29.675" level="FAIL">Page should have contained text 'Promotion: One lucky draw, Free 1 Sundae' but did not.</msg>
+<status status="FAIL" starttime="20190911 03:30:28.841" endtime="20190911 03:30:29.675"></status>
+</kw>
+<status status="FAIL" starttime="20190911 03:30:27.284" endtime="20190911 03:30:29.675" critical="yes">Page should have contained text 'Promotion: One lucky draw, Free 1 Sundae' but did not.</status>
+</test>
+<test id="s1-t10" name="10.Customers&gt;1 ProNo memberNo">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>custNo</arg>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20190911 03:30:29.678" level="INFO">Typing text '4' into text field 'custNo'.</msg>
+<status status="PASS" starttime="20190911 03:30:29.678" endtime="20190911 03:30:30.017"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>isPromotionDate</arg>
+<arg>No</arg>
+</arguments>
+<msg timestamp="20190911 03:30:30.017" level="INFO">Selecting 'No' from radio button 'isPromotionDate'.</msg>
+<status status="PASS" starttime="20190911 03:30:30.017" endtime="20190911 03:30:30.364"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>isMember</arg>
+<arg>Not a member</arg>
+</arguments>
+<msg timestamp="20190911 03:30:30.365" level="INFO">Selecting 'Not a member' from radio button 'isMember'.</msg>
+<status status="PASS" starttime="20190911 03:30:30.364" endtime="20190911 03:30:30.698"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Submit</arg>
+</arguments>
+<msg timestamp="20190911 03:30:30.699" level="INFO">Clicking button 'Submit'.</msg>
+<status status="PASS" starttime="20190911 03:30:30.698" endtime="20190911 03:30:31.033"></status>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Total Price = 558.8800000000001 baht</arg>
+</arguments>
+<msg timestamp="20190911 03:30:31.351" level="INFO">Current page does not contain text 'Total Price = 558.8800000000001 baht'.</msg>
+<status status="PASS" starttime="20190911 03:30:31.033" endtime="20190911 03:30:31.351"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Promotion: Offer a membership</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190911 03:30:32.134" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-118.png"&gt;&lt;img src="selenium-screenshot-118.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20190911 03:30:31.777" endtime="20190911 03:30:32.134"></status>
+</kw>
+<msg timestamp="20190911 03:30:32.135" level="FAIL">Page should have contained text 'Promotion: Offer a membership' but did not.</msg>
+<status status="FAIL" starttime="20190911 03:30:31.351" endtime="20190911 03:30:32.135"></status>
+</kw>
+<status status="FAIL" starttime="20190911 03:30:29.677" endtime="20190911 03:30:32.135" critical="yes">Page should have contained text 'Promotion: Offer a membership' but did not.</status>
+</test>
+<test id="s1-t11" name="11.Customers&gt;1 ProNo memberSilver">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>custNo</arg>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20190911 03:30:32.138" level="INFO">Typing text '4' into text field 'custNo'.</msg>
+<status status="PASS" starttime="20190911 03:30:32.138" endtime="20190911 03:30:32.473"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>isPromotionDate</arg>
+<arg>No</arg>
+</arguments>
+<msg timestamp="20190911 03:30:32.473" level="INFO">Selecting 'No' from radio button 'isPromotionDate'.</msg>
+<status status="PASS" starttime="20190911 03:30:32.473" endtime="20190911 03:30:32.687"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>isMember</arg>
+<arg>Silver</arg>
+</arguments>
+<msg timestamp="20190911 03:30:32.687" level="INFO">Selecting 'Silver' from radio button 'isMember'.</msg>
+<status status="PASS" starttime="20190911 03:30:32.687" endtime="20190911 03:30:33.020"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Submit</arg>
+</arguments>
+<msg timestamp="20190911 03:30:33.020" level="INFO">Clicking button 'Submit'.</msg>
+<status status="PASS" starttime="20190911 03:30:33.020" endtime="20190911 03:30:33.358"></status>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Total Price = 558.8800000000001 baht</arg>
+</arguments>
+<msg timestamp="20190911 03:30:33.675" level="INFO">Current page does not contain text 'Total Price = 558.8800000000001 baht'.</msg>
+<status status="PASS" starttime="20190911 03:30:33.359" endtime="20190911 03:30:33.675"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Promotion: Free 1 Sundae</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190911 03:30:34.466" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-119.png"&gt;&lt;img src="selenium-screenshot-119.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20190911 03:30:34.101" endtime="20190911 03:30:34.466"></status>
+</kw>
+<msg timestamp="20190911 03:30:34.466" level="FAIL">Page should have contained text 'Promotion: Free 1 Sundae' but did not.</msg>
+<status status="FAIL" starttime="20190911 03:30:33.676" endtime="20190911 03:30:34.466"></status>
+</kw>
+<status status="FAIL" starttime="20190911 03:30:32.137" endtime="20190911 03:30:34.467" critical="yes">Page should have contained text 'Promotion: Free 1 Sundae' but did not.</status>
+</test>
+<test id="s1-t12" name="12.Customers&gt;1 ProNo memberGoal">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>custNo</arg>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20190911 03:30:34.470" level="INFO">Typing text '4' into text field 'custNo'.</msg>
+<status status="PASS" starttime="20190911 03:30:34.470" endtime="20190911 03:30:34.806"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>isPromotionDate</arg>
+<arg>No</arg>
+</arguments>
+<msg timestamp="20190911 03:30:34.806" level="INFO">Selecting 'No' from radio button 'isPromotionDate'.</msg>
+<status status="PASS" starttime="20190911 03:30:34.806" endtime="20190911 03:30:35.020"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>isMember</arg>
+<arg>Gold</arg>
+</arguments>
+<msg timestamp="20190911 03:30:35.020" level="INFO">Selecting 'Gold' from radio button 'isMember'.</msg>
+<status status="PASS" starttime="20190911 03:30:35.020" endtime="20190911 03:30:35.370"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Submit</arg>
+</arguments>
+<msg timestamp="20190911 03:30:35.370" level="INFO">Clicking button 'Submit'.</msg>
+<status status="PASS" starttime="20190911 03:30:35.370" endtime="20190911 03:30:35.708"></status>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Total Price = 558.8800000000001 baht</arg>
+</arguments>
+<msg timestamp="20190911 03:30:36.030" level="INFO">Current page does not contain text 'Total Price = 558.8800000000001 baht'.</msg>
+<status status="PASS" starttime="20190911 03:30:35.709" endtime="20190911 03:30:36.030"></status>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<doc>Verifies that current page contains ``text``.</doc>
+<arguments>
+<arg>Promotion: Free 1 Sundae</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190911 03:30:36.836" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-120.png"&gt;&lt;img src="selenium-screenshot-120.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20190911 03:30:36.453" endtime="20190911 03:30:36.836"></status>
+</kw>
+<msg timestamp="20190911 03:30:36.836" level="FAIL">Page should have contained text 'Promotion: Free 1 Sundae' but did not.</msg>
+<status status="FAIL" starttime="20190911 03:30:36.030" endtime="20190911 03:30:36.836"></status>
+</kw>
+<status status="FAIL" starttime="20190911 03:30:34.469" endtime="20190911 03:30:36.837" critical="yes">Page should have contained text 'Promotion: Free 1 Sundae' but did not.</status>
+</test>
+<test id="s1-t13" name="13.Customers11 ProYes memberNo">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>custNo</arg>
+<arg>11</arg>
+</arguments>
+<msg timestamp="20190911 03:30:36.839" level="INFO">Typing text '11' into text field 'custNo'.</msg>
+<status status="PASS" starttime="20190911 03:30:36.839" endtime="20190911 03:30:37.177"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>isPromotionDate</arg>
+<arg>Yes</arg>
+</arguments>
+<msg timestamp="20190911 03:30:37.178" level="INFO">Selecting 'Yes' from radio button 'isPromotionDate'.</msg>
+<status status="PASS" starttime="20190911 03:30:37.177" endtime="20190911 03:30:37.545"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>isMember</arg>
+<arg>Not a member</arg>
+</arguments>
+<msg timestamp="20190911 03:30:37.546" level="INFO">Selecting 'Not a member' from radio button 'isMember'.</msg>
+<status status="PASS" starttime="20190911 03:30:37.546" endtime="20190911 03:30:37.885"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Submit</arg>
+</arguments>
+<msg timestamp="20190911 03:30:37.886" level="INFO">Clicking button 'Submit'.</msg>
+<status status="PASS" starttime="20190911 03:30:37.886" endtime="20190911 03:30:38.219"></status>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Total Price</arg>
+<arg>= 6147.679999999999 baht</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190911 03:30:38.907" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-121.png"&gt;&lt;img src="selenium-screenshot-121.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20190911 03:30:38.538" endtime="20190911 03:30:38.909"></status>
+</kw>
+<msg timestamp="20190911 03:30:38.909" level="FAIL">Invalid log level '= 6147.679999999999 BAHT'.</msg>
+<status status="FAIL" starttime="20190911 03:30:38.219" endtime="20190911 03:30:38.909"></status>
+</kw>
+<status status="FAIL" starttime="20190911 03:30:36.838" endtime="20190911 03:30:38.909" critical="yes">Invalid log level '= 6147.679999999999 BAHT'.</status>
+</test>
+<test id="s1-t14" name="14.Customers11 ProYes memberSilver">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>custNo</arg>
+<arg>11</arg>
+</arguments>
+<msg timestamp="20190911 03:30:38.912" level="INFO">Typing text '11' into text field 'custNo'.</msg>
+<status status="PASS" starttime="20190911 03:30:38.911" endtime="20190911 03:30:39.254"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>isPromotionDate</arg>
+<arg>Yes</arg>
+</arguments>
+<msg timestamp="20190911 03:30:39.254" level="INFO">Selecting 'Yes' from radio button 'isPromotionDate'.</msg>
+<status status="PASS" starttime="20190911 03:30:39.254" endtime="20190911 03:30:39.466"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>isMember</arg>
+<arg>Silver</arg>
+</arguments>
+<msg timestamp="20190911 03:30:39.466" level="INFO">Selecting 'Silver' from radio button 'isMember'.</msg>
+<status status="PASS" starttime="20190911 03:30:39.466" endtime="20190911 03:30:39.808"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Submit</arg>
+</arguments>
+<msg timestamp="20190911 03:30:39.808" level="INFO">Clicking button 'Submit'.</msg>
+<status status="PASS" starttime="20190911 03:30:39.808" endtime="20190911 03:30:40.142"></status>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Total Price</arg>
+<arg>= 6147.679999999999 baht</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190911 03:30:40.836" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-122.png"&gt;&lt;img src="selenium-screenshot-122.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20190911 03:30:40.459" endtime="20190911 03:30:40.836"></status>
+</kw>
+<msg timestamp="20190911 03:30:40.836" level="FAIL">Invalid log level '= 6147.679999999999 BAHT'.</msg>
+<status status="FAIL" starttime="20190911 03:30:40.142" endtime="20190911 03:30:40.836"></status>
+</kw>
+<status status="FAIL" starttime="20190911 03:30:38.911" endtime="20190911 03:30:40.837" critical="yes">Invalid log level '= 6147.679999999999 BAHT'.</status>
+</test>
+<test id="s1-t15" name="15.Customers11 ProYes memberGoal">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>custNo</arg>
+<arg>11</arg>
+</arguments>
+<msg timestamp="20190911 03:30:40.839" level="INFO">Typing text '11' into text field 'custNo'.</msg>
+<status status="PASS" starttime="20190911 03:30:40.839" endtime="20190911 03:30:41.177"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>isPromotionDate</arg>
+<arg>Yes</arg>
+</arguments>
+<msg timestamp="20190911 03:30:41.178" level="INFO">Selecting 'Yes' from radio button 'isPromotionDate'.</msg>
+<status status="PASS" starttime="20190911 03:30:41.178" endtime="20190911 03:30:41.396"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>isMember</arg>
+<arg>Gold</arg>
+</arguments>
+<msg timestamp="20190911 03:30:41.397" level="INFO">Selecting 'Gold' from radio button 'isMember'.</msg>
+<status status="PASS" starttime="20190911 03:30:41.396" endtime="20190911 03:30:41.735"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Submit</arg>
+</arguments>
+<msg timestamp="20190911 03:30:41.735" level="INFO">Clicking button 'Submit'.</msg>
+<status status="PASS" starttime="20190911 03:30:41.735" endtime="20190911 03:30:42.072"></status>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Total Price = 6147.679999999999 baht</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190911 03:30:42.767" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-123.png"&gt;&lt;img src="selenium-screenshot-123.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20190911 03:30:42.390" endtime="20190911 03:30:42.767"></status>
+</kw>
+<msg timestamp="20190911 03:30:42.767" level="FAIL">Page should not have contained text 'Total Price = 6147.679999999999 baht'.</msg>
+<status status="FAIL" starttime="20190911 03:30:42.072" endtime="20190911 03:30:42.768"></status>
+</kw>
+<status status="FAIL" starttime="20190911 03:30:40.839" endtime="20190911 03:30:42.768" critical="yes">Page should not have contained text 'Total Price = 6147.679999999999 baht'.</status>
+</test>
+<test id="s1-t16" name="16.Customers11 ProNo memberNo">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>custNo</arg>
+<arg>11</arg>
+</arguments>
+<msg timestamp="20190911 03:30:42.771" level="INFO">Typing text '11' into text field 'custNo'.</msg>
+<status status="PASS" starttime="20190911 03:30:42.771" endtime="20190911 03:30:43.108"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>isPromotionDate</arg>
+<arg>No</arg>
+</arguments>
+<msg timestamp="20190911 03:30:43.108" level="INFO">Selecting 'No' from radio button 'isPromotionDate'.</msg>
+<status status="PASS" starttime="20190911 03:30:43.108" endtime="20190911 03:30:43.443"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>isMember</arg>
+<arg>Not a member</arg>
+</arguments>
+<msg timestamp="20190911 03:30:43.444" level="INFO">Selecting 'Not a member' from radio button 'isMember'.</msg>
+<status status="PASS" starttime="20190911 03:30:43.444" endtime="20190911 03:30:43.778"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Submit</arg>
+</arguments>
+<msg timestamp="20190911 03:30:43.778" level="INFO">Clicking button 'Submit'.</msg>
+<status status="PASS" starttime="20190911 03:30:43.778" endtime="20190911 03:30:44.117"></status>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Total Price = 6147.679999999999 baht</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190911 03:30:44.789" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-124.png"&gt;&lt;img src="selenium-screenshot-124.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20190911 03:30:44.435" endtime="20190911 03:30:44.789"></status>
+</kw>
+<msg timestamp="20190911 03:30:44.790" level="FAIL">Page should not have contained text 'Total Price = 6147.679999999999 baht'.</msg>
+<status status="FAIL" starttime="20190911 03:30:44.118" endtime="20190911 03:30:44.790"></status>
+</kw>
+<status status="FAIL" starttime="20190911 03:30:42.770" endtime="20190911 03:30:44.790" critical="yes">Page should not have contained text 'Total Price = 6147.679999999999 baht'.</status>
+</test>
+<test id="s1-t17" name="17.Customers11 ProNo memberSilver">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>custNo</arg>
+<arg>11</arg>
+</arguments>
+<msg timestamp="20190911 03:30:44.792" level="INFO">Typing text '11' into text field 'custNo'.</msg>
+<status status="PASS" starttime="20190911 03:30:44.792" endtime="20190911 03:30:45.130"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>isPromotionDate</arg>
+<arg>No</arg>
+</arguments>
+<msg timestamp="20190911 03:30:45.130" level="INFO">Selecting 'No' from radio button 'isPromotionDate'.</msg>
+<status status="PASS" starttime="20190911 03:30:45.130" endtime="20190911 03:30:45.344"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>isMember</arg>
+<arg>Silver</arg>
+</arguments>
+<msg timestamp="20190911 03:30:45.345" level="INFO">Selecting 'Silver' from radio button 'isMember'.</msg>
+<status status="PASS" starttime="20190911 03:30:45.345" endtime="20190911 03:30:45.682"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Submit</arg>
+</arguments>
+<msg timestamp="20190911 03:30:45.683" level="INFO">Clicking button 'Submit'.</msg>
+<status status="PASS" starttime="20190911 03:30:45.683" endtime="20190911 03:30:46.027"></status>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Total Price = 6147.679999999999 baht</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190911 03:30:46.724" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-125.png"&gt;&lt;img src="selenium-screenshot-125.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20190911 03:30:46.344" endtime="20190911 03:30:46.724"></status>
+</kw>
+<msg timestamp="20190911 03:30:46.724" level="FAIL">Page should not have contained text 'Total Price = 6147.679999999999 baht'.</msg>
+<status status="FAIL" starttime="20190911 03:30:46.027" endtime="20190911 03:30:46.724"></status>
+</kw>
+<status status="FAIL" starttime="20190911 03:30:44.791" endtime="20190911 03:30:46.725" critical="yes">Page should not have contained text 'Total Price = 6147.679999999999 baht'.</status>
+</test>
+<test id="s1-t18" name="18.Customers11 ProNo memberGoal">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>custNo</arg>
+<arg>11</arg>
+</arguments>
+<msg timestamp="20190911 03:30:46.727" level="INFO">Typing text '11' into text field 'custNo'.</msg>
+<status status="PASS" starttime="20190911 03:30:46.727" endtime="20190911 03:30:47.070"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>isPromotionDate</arg>
+<arg>No</arg>
+</arguments>
+<msg timestamp="20190911 03:30:47.070" level="INFO">Selecting 'No' from radio button 'isPromotionDate'.</msg>
+<status status="PASS" starttime="20190911 03:30:47.070" endtime="20190911 03:30:47.282"></status>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<doc>Sets radio button group ``group_name`` to ``value``.</doc>
+<arguments>
+<arg>isMember</arg>
+<arg>Gold</arg>
+</arguments>
+<msg timestamp="20190911 03:30:47.282" level="INFO">Selecting 'Gold' from radio button 'isMember'.</msg>
+<status status="PASS" starttime="20190911 03:30:47.282" endtime="20190911 03:30:47.618"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>Submit</arg>
+</arguments>
+<msg timestamp="20190911 03:30:47.618" level="INFO">Clicking button 'Submit'.</msg>
+<status status="PASS" starttime="20190911 03:30:47.618" endtime="20190911 03:30:47.960"></status>
+</kw>
+<kw name="Page Should Not Contain" library="SeleniumLibrary">
+<doc>Verifies the current page does not contain ``text``.</doc>
+<arguments>
+<arg>Total Price = 6147.679999999999 baht</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20190911 03:30:48.650" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-126.png"&gt;&lt;img src="selenium-screenshot-126.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20190911 03:30:48.276" endtime="20190911 03:30:48.651"></status>
+</kw>
+<msg timestamp="20190911 03:30:48.652" level="FAIL">Page should not have contained text 'Total Price = 6147.679999999999 baht'.</msg>
+<status status="FAIL" starttime="20190911 03:30:47.960" endtime="20190911 03:30:48.652"></status>
+</kw>
+<status status="FAIL" starttime="20190911 03:30:46.727" endtime="20190911 03:30:48.652" critical="yes">Page should not have contained text 'Total Price = 6147.679999999999 baht'.</status>
+</test>
+<test id="s1-t19" name="19.NoCustomer ProNo memberNo">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>custNo</arg>
+</arguments>
+<msg timestamp="20190911 03:30:48.655" level="FAIL">Keyword 'SeleniumLibrary.Input Text' expected 2 arguments, got 1.</msg>
+<status status="FAIL" starttime="20190911 03:30:48.655" endtime="20190911 03:30:48.655"></status>
+</kw>
+<status status="FAIL" starttime="20190911 03:30:48.654" endtime="20190911 03:30:48.655" critical="yes">Keyword 'SeleniumLibrary.Input Text' expected 2 arguments, got 1.</status>
+</test>
+<test id="s1-t20" name="20.NoCustomer ProNo memberSilver">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>custNo</arg>
+</arguments>
+<msg timestamp="20190911 03:30:48.656" level="FAIL">Keyword 'SeleniumLibrary.Input Text' expected 2 arguments, got 1.</msg>
+<status status="FAIL" starttime="20190911 03:30:48.656" endtime="20190911 03:30:48.656"></status>
+</kw>
+<status status="FAIL" starttime="20190911 03:30:48.656" endtime="20190911 03:30:48.657" critical="yes">Keyword 'SeleniumLibrary.Input Text' expected 2 arguments, got 1.</status>
+</test>
+<test id="s1-t21" name="21.NoCustomer ProNo memberGoal">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>custNo</arg>
+</arguments>
+<msg timestamp="20190911 03:30:48.658" level="FAIL">Keyword 'SeleniumLibrary.Input Text' expected 2 arguments, got 1.</msg>
+<status status="FAIL" starttime="20190911 03:30:48.658" endtime="20190911 03:30:48.658"></status>
+</kw>
+<status status="FAIL" starttime="20190911 03:30:48.657" endtime="20190911 03:30:48.658" critical="yes">Keyword 'SeleniumLibrary.Input Text' expected 2 arguments, got 1.</status>
+</test>
+<test id="s1-t22" name="22.NoCustomer ProYes memberNo">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>custNo</arg>
+</arguments>
+<msg timestamp="20190911 03:30:48.659" level="FAIL">Keyword 'SeleniumLibrary.Input Text' expected 2 arguments, got 1.</msg>
+<status status="FAIL" starttime="20190911 03:30:48.659" endtime="20190911 03:30:48.660"></status>
+</kw>
+<status status="FAIL" starttime="20190911 03:30:48.659" endtime="20190911 03:30:48.661" critical="yes">Keyword 'SeleniumLibrary.Input Text' expected 2 arguments, got 1.</status>
+</test>
+<test id="s1-t23" name="23.NoCustomer ProYes memberSilver">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>custNo</arg>
+</arguments>
+<msg timestamp="20190911 03:30:48.662" level="FAIL">Keyword 'SeleniumLibrary.Input Text' expected 2 arguments, got 1.</msg>
+<status status="FAIL" starttime="20190911 03:30:48.662" endtime="20190911 03:30:48.662"></status>
+</kw>
+<status status="FAIL" starttime="20190911 03:30:48.662" endtime="20190911 03:30:48.662" critical="yes">Keyword 'SeleniumLibrary.Input Text' expected 2 arguments, got 1.</status>
+</test>
+<test id="s1-t24" name="24.NoCustomer ProYes memberGoal">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>custNo</arg>
+</arguments>
+<msg timestamp="20190911 03:30:48.664" level="FAIL">Keyword 'SeleniumLibrary.Input Text' expected 2 arguments, got 1.</msg>
+<status status="FAIL" starttime="20190911 03:30:48.664" endtime="20190911 03:30:48.664"></status>
+</kw>
+<status status="FAIL" starttime="20190911 03:30:48.663" endtime="20190911 03:30:48.664" critical="yes">Keyword 'SeleniumLibrary.Input Text' expected 2 arguments, got 1.</status>
+</test>
+<status status="FAIL" starttime="20190911 03:30:03.597" endtime="20190911 03:30:48.667"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="24">Critical Tests</stat>
+<stat pass="0" fail="24">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="24" id="s1" name="lab6Test">lab6Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

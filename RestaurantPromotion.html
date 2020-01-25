@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crazy Buffet</title>
+</head>
+
+<body>
+	<div>
+		<h1>Crazy Buffet</h1>
+		<form name="order_form" onsubmit="return calculateTotalPrice();" action="">
+			<input type="text" id="custNo" name="custNo" placeholder="No. of Customers"/>	
+			
+			<br><label for="isWednesday">Is today Wednesday?</label><br>
+			<input type="radio" name="isPromotionDate" id="PromotionDate" value="Yes"><label for="Wednesday"> Yes</label><br> 
+			<input type="radio" name="isPromotionDate" id="NotPromotionDate" value="No"><label for="NotWednesday"> No</label><br> 
+							
+			<br><label for="NotMember">Membership</label><br> 
+			<input type="radio" name="isMember" id="NoMember" value="Not a member"><label for="NotMember"> Not a Member</label><br> 
+			<input type="radio" name="isMember" id="SilverMember" value="Silver"><label for="Silver"> Silver</label><br>
+			<input type="radio" name="isMember" id="GoldMember" value="Gold"><label for="Gold"> Gold</label><br>
+			<br><input type="submit" id="submit" value="Submit">
+			<p id="error"></p>
+			<p id="totalprice"></p>
+			<p id="promotion"></p>
+		</form>
+	</div>
+</body>
+
+<script type="text/javascript">
+	function calculateTotalPrice(){
+		var totalPrice = 0;
+		var numCustomer = parseInt(document.order_form.custNo.value);
+		var vat = 0;
+		var servicecharge = 0;
+		var allPromotion = "Promotions: ";
+		var freeTicket = document.getElementById("PromotionDate").checked;
+		
+		foodprice = numCustomer*499;
+		vat = foodprice*0.07;
+		servicecharge = foodprice*0.05;
+		totalPrice = foodprice + vat + servicecharge;
+		
+		if (freeTicket)
+		{	allPromotion = allPromotion + "One lucky draw, ";
+		}			
+		
+		if ((document.getElementById("SilverMember").checked)||(document.getElementById("GoldMember").checked))
+		{	allPromotion = allPromotion + "Free 1 Sundae";
+		}
+		else
+		{	allPromotion = allPromotion + "Offer a membership";			
+		}
+				
+		document.getElementById('totalprice').innerHTML = "Total Price = " + totalPrice + " baht";
+		document.getElementById('promotion').innerHTML = allPromotion;
+		
+		return false;
+	}
+</script>
+
+
+<style>
+body {
+	font-family: Arial;
+	background: #f2f2f2
+}
+#errors {
+	text-align: right;
+}
+h1 {
+	color: #7FB104;
+	font-weight: lighter;
+	font-size: 28px;
+	margin-bottom: 0;
+}
+
+input[type=text], input[type=email]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    box-sizing: border-box;
+}
+
+label {
+	font-size: 14px;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #7FB104;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    font-size: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #607d8b;
+}
+
+div {
+		margin: 2em auto;
+        width: 300px;
+		border-radius: 0 0 2px 2px;    
+		background-color: #ffffff;
+        padding: 18px 50px 40px;
+}
+</style>
+
+</html>
